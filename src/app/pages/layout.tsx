@@ -10,7 +10,7 @@ export default function PagesLayout({
 }) {
     return (
         <div className="flex h-screen">
-            <Sidebar>
+            {/* <Sidebar>
                 <SidebarItem icon={<LayoutDashboard size={20} />} text="Dashboard" active />
                 <SidebarItem icon={<StickyNote size={20} />} text="Projects" alert />
                 <SidebarItem icon={<Calendar size={20} />} text="Calendar" />
@@ -26,7 +26,7 @@ export default function PagesLayout({
                 <div className="h-screen overflow-auto">
                     {children}
                 </div>
-            </main>
+            </main> */}
         </div>
     )
 }

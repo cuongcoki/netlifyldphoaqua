@@ -16,7 +16,7 @@ import Image from "next/image"
 export default function Page() {
     return (
         <div className="flex flex-col flex-wrap items-center mt-16 gap-5">
-            <Card className="w-[650px] h-[630px] ">
+            {/* <Card className="w-[650px] h-[630px] ">
                 <CardHeader>
                     <div className={`flex justify-between items-center overflow-hidden transition-all`}>
                         <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ export default function Page() {
                         <Textarea placeholder="Type your message here." style={{ width: 'full', height: '20px' }} />
                     </div>
                 </CardFooter>
-            </Card>
+            </Card> */}
             
         </div>
 
