@@ -1,7 +1,6 @@
 'use client'
 
-import Navbar from "@/navigation/horizontal/NavbarContent";
-import Sidebar, { SidebarItem } from "@/navigation/vertical/NavbarContent"
+
 import { LayoutDashboard, StickyNote, Layers, Flag, Calendar, LifeBuoy, Settings } from "lucide-react";
 export default function PagesLayout({
     children, // will be a page or nested layout
