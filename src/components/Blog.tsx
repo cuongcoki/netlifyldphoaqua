@@ -5,20 +5,9 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
-    CardHeader,
     CardTitle,
 } from "@/components/ui/card"
 
-import {
-    Pagination,
-    PaginationContent,
-    PaginationEllipsis,
-    PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious,
-} from "@/components/ui/pagination"
 
 import {
     Dialog,
@@ -116,7 +105,7 @@ const Blog = () => {
                     <h2 className='text-2xl text-green-500 font-semibold mb-3 text-center'>Bài Viết Hot Nhất Hôm Nay</h2>
                     <Card className=" flex">
                         <div className='w-[70%]'>
-                            <Image id='hotimage' src={blogh} className='w-full opacity-0 translate-x-40' />
+                            <Image id='hotimage' src={blogh} className='w-full opacity-0 translate-x-40' alt='hi'/>
                         </div>
                         <CardContent className='w-[30%] '>
                             <div id='contenthotimage' className='opacity-0 '>
@@ -132,7 +121,7 @@ const Blog = () => {
                         <Card id='conblog' className="w-full opacity-0">
                             <CardContent className="flex flex-col justify-start items-start p-2 ">
                                 <div className='overflow-hidden w-full'>
-                                    <Image id='conima' src={blogh} className="w-full h-[200px] object-cover object-center scale-150 " />
+                                    <Image id='conima' src={blogh} className="w-full h-[200px] object-cover object-center scale-150 " alt='hi'/>
                                 </div>
                                 <div>
                                     <CardTitle>Create project</CardTitle>
@@ -143,7 +132,7 @@ const Blog = () => {
                         <Card id='conblog' className="w-full opacity-0">
                             <CardContent className="flex flex-col justify-start items-start p-2 ">
                                 <div className='overflow-hidden w-full'>
-                                    <Image id='conima' src={blogh} className="w-full h-[200px] object-cover object-center scale-150 " />
+                                    <Image id='conima' src={blogh} className="w-full h-[200px] object-cover object-center scale-150 " alt=''/>
                                 </div>
                                 <div>
                                     <CardTitle>Create project</CardTitle>

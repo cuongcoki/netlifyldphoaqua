@@ -8,11 +8,11 @@ import { MapPin, Phone, Globe, Mail, Facebook, Instagram, Twitch, Twitter, Youtu
 const Footer = () => {
     return (
         <div className='bg-green-500  bg-footer-texture relative '>
-            <Image className=' w-full  transition duration-500 cursor-pointer h-full object-cover' src={footerBG} />
+            <Image className=' w-full  transition duration-500 cursor-pointer h-full object-cover' src={footerBG} alt='hihi'/>
             <div className=' container transition duration-500 text-center absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-2xl text-white'>
                 {/* // contact */}
                 <div className='flex justify-between  items-center'>
-                    <Image src={footerLogof} />
+                    <Image src={footerLogof} alt='hihi'/>
                     <Input placeholder='Nhập Số Điện Thoại ...' className='m-5 rounded-3xl p-8' />
                     <Button className='bg-orange-500 rounded-3xl p-8 text-xl'>Nhận Ưu Đãi</Button>
                 </div>
@@ -61,7 +61,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* // */}
-                <Image src={logoDaThongBao} className=' m-auto' />
+                <Image src={logoDaThongBao} className=' m-auto' alt='hihi'/>
                 <div className='mt-20'>
                     <i className='mt-20 font-light font-sans text-slate-100'>Copyright 2024 © Trai Cay Organic - All Rights reserved | Design by : Nhat Le</i>
                 </div>

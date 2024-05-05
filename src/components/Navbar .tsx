@@ -28,7 +28,7 @@ const Navbar = () => {
         <section className='w-full py-5 sm:px-10 px-5 bg-green-500'>
             <div className="hidden sm:ml-6 sm:block ">
                 <div id='hihi' className="flex space-x-4 justify-center items-center">
-                    {navListsLandingPage.map((item) => (
+                    {navListsLandingPage.map((item, index) => (
                         <a
                             className={clsx(
                                 currentPage ? 'bg-none text-black ' : 'text-black hover:bg-gray-700 hover:text-white',
@@ -36,6 +36,7 @@ const Navbar = () => {
                             )}
                             aria-current={currentPage ? 'page' : undefined}
                             id='navitm'
+                            key={index}
                         >
                             {item}
                         </a>

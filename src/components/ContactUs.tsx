@@ -102,7 +102,7 @@ const ContactUs = () => {
             </section>
 
             <section className='bg-green-400 h-[500px] relative '>
-                <Image className=' w-full  transition duration-500 cursor-pointer h-full object-cover' src={footerBG} />
+                <Image className=' w-full  transition duration-500 cursor-pointer h-full object-cover' src={footerBG} alt=''/>
                 <div className=' container transition duration-500 text-center absolute left-0 right-0 top-1/2 transform -translate-y-1/2 text-2xl text-white'>
                     <div className='flex flex-col gap-6'>
                         <h2 className="text-3xl highlight-title text-center font-semibold text-black">TẠI SAO LỰA CHỌN CHÚNG TÔI ?</h2>
@@ -110,9 +110,9 @@ const ContactUs = () => {
                         <div className='flex items-center justify-between'>
                             {
                                 contactusItem.map((item, index) => (
-                                    <div id='whyICON' className=' flex justify-center items-center w-[200px] h-[200px] bg-white rounded-full translate-x-20 opacity-0'>
+                                    <div key={index} id='whyICON' className=' flex justify-center items-center w-[200px] h-[200px] bg-white rounded-full translate-x-20 opacity-0'>
                                         <div className='flex flex-col items-center mx-0 my-auto'>
-                                            <Image src={item.img} />
+                                            <Image src={item.img} alt='hi'/>
                                             <span className='text-black font-semibold'> {item.title}</span>
                                             <i className='text-black text-lg font-sans'> {item.bo}</i>
                                         </div>
@@ -133,12 +133,12 @@ const ContactUs = () => {
                 <div className='flex text-center justify-between items-center'>
                     {
                         contactusItem2.map((item, index) => (
-                            <Card className='border-none shadow-none'>
+                            <Card key={index} className='border-none shadow-none'>
                                 <Separator id='aboutICONLinner' className='h-[8px] bg-green-500 mb-1 opacity-0 translate-x+20' />
                                 <div id='aboutICON' className='flex  items-start  w-[250px] h-[400px] bg-slate-100 rounded-b-[999px] translate-x-20 opacity-0'>
                                     <CardContent className='mt-2'>
                                         <div className='flex flex-col items-center mx-0 my-auto'>
-                                            <Image src={item.img} />
+                                            <Image src={item.img} alt='hi'/>
                                             <span className='text-green-600 text-2xl font-semibold my-5'> {item.title}</span>
                                             <i className='text-black text-lg font-sans'> {item.bo}</i>
                                         </div>
